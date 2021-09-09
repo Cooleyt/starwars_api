@@ -23,7 +23,7 @@ const SingleCharacter = (props) => {
     return(
         <>
 
-            <div className="text-center mt-4" >
+            <div >
             { 
                 type === "people" ? 
             <> 

@@ -15,11 +15,11 @@ const Main = (props) => {
     }
     
     return(
-        <div className="row">
+        <div>
             <form onSubmit={search}>
-            <div className="form-group text-center">
-            <p className="text-muted">Search for:</p>
-            <select className="dropdown col-md-1 text-center" value={searchType} onChange={e => setSearchType(e.target.value)}>
+            <div>
+            <p>Search for:</p>
+            <select value={searchType} onChange={e => setSearchType(e.target.value)}>
                 <option value=""></option>
                 <option value="people">People</option>
                 <option value="planets">Planets</option>
@@ -27,11 +27,11 @@ const Main = (props) => {
                 
             </select>
             </div>
-            <div className="form-group">
+            <div>
             <p>Enter ID:</p>
-            <input type="text"className="form-group col-md-2 text-center" onChange={e => setSearchID(e.target.value)} type="number" value={searchID}/>
+            <input type="text" onChange={e => setSearchID(e.target.value)} type="number" value={searchID}/>
             </div>
-            <input type="submit" value="Search the Galaxy" className="btn btn-secondary" />
+            <input type="submit" value="Search the Galaxy" className="btn btn-alert" />
 
         </form>
 
