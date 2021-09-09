@@ -28,7 +28,7 @@ const Main = (props) => {
             </select>
             </div>
             <div>
-            <p>Enter ID:</p>
+            <p>Enter ID #:</p>
             <input type="text" onChange={e => setSearchID(e.target.value)} type="number" value={searchID}/>
             </div>
             <input type="submit" value="Search the Galaxy" className="btn btn-alert" />
