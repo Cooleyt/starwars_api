@@ -21,12 +21,10 @@ const Main = (props) => {
             <p className="text-muted">Search for:</p>
             <select className="dropdown col-md-1 text-center" value={searchType} onChange={e => setSearchType(e.target.value)}>
                 <option value=""></option>
-                <option value="planets">Planets</option>
                 <option value="people">People</option>
+                <option value="planets">Planets</option>
                 <option value="starships">Starships</option>
-                <option value ="vehicles">Vehicles</option>
-                    <option value ="species">Species</option>
-                    <option value ="films">Films</option>
+                
             </select>
             </div>
             <div className="form-group">
